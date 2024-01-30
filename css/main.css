@@ -16,3 +16,21 @@
     width: 148px;
     height: 148px;
 }
+
+.animate {
+    animation: show 1s forwards;
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(25vh);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
