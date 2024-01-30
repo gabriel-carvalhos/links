@@ -1,0 +1,12 @@
+.title {
+    font-family: 'DM Serif Display', sans-serif;
+    letter-spacing: -3px;
+}
+
+.btn-gray {
+    --bs-btn-bg: #333;
+    --bs-btn-hover-bg: #0a0a0a;
+    --bs-btn-active-bg: rgb(0, 0, 0);
+    --bs-btn-border-color: white;
+    --bs-btn-hover-border-color: white;
+}
