@@ -1,5 +1,6 @@
 .title {
     font-family: 'DM Serif Display', sans-serif;
+    font-size: 48px;
     letter-spacing: -3px;
 }
 
@@ -9,4 +10,9 @@
     --bs-btn-active-bg: rgb(0, 0, 0);
     --bs-btn-border-color: white;
     --bs-btn-hover-border-color: white;
+}
+
+.img-size {
+    width: 148px;
+    height: 148px;
 }
