@@ -7,10 +7,14 @@
 .btn-gray {
     --bs-btn-bg: #333;
     --bs-btn-hover-bg: #0a0a0a;
-    --bs-btn-active-bg: rgb(0, 0, 0);
+    --bs-btn-active-bg: black;
     --bs-btn-border-color: white;
     --bs-btn-hover-border-color: white;
     /* position: relative; */
+}
+
+.btn-gray.unvalible {
+    --bs-btn-active-bg: #0a0a0a; 
 }
 
 /* .btn-gray::after {
