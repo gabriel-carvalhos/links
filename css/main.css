@@ -65,11 +65,11 @@
     height: 148px;
 }
 
-.animate {
-    animation: show 1s forwards;
+.animate-translate {
+    animation: translate 1s forwards;
 }
 
-@keyframes show {
+@keyframes translate {
     0% {
         transform: translateY(25vh);
         opacity: 0;
@@ -79,6 +79,21 @@
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-opacity {
+    opacity: 0;
+    animation: opacity .3s forwards;
+    animation-delay: 1s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
