@@ -20,7 +20,9 @@
 .title {
     font-family: 'DM Serif Display', serif;
     font-size: 48px;
+    line-height: .75;
     letter-spacing: -3px;
+    width: fit-content;
 }
 
 .btn-links {
