@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 [data-bs-theme="dark"] {
     --bs-body-bg: #0a0a0a;
     --bs-border-color: white;
