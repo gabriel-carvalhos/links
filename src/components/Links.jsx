@@ -7,7 +7,7 @@ function Links() {
                 <Button href="https://www.linkedin.com/in/gabrielcarvalhosnt">LinkedIn</Button>
                 <Button href="https://www.github.com/gabriel-carvalhos">GitHub</Button>
                 <Button href="mailto:gabrielcarvalhos.snt@gmail.com">Email</Button>
-                <Button>Portifolio</Button>
+                <Button unvailable>Portifolio</Button>
             </ul>
         </>
     )
