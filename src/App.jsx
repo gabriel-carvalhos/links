@@ -1,5 +1,6 @@
 import Links from "./components/Links";
 import Header from "./components/Header";
+import ThemeDropdown from "./components/ThemeDropdown";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
           <Header />
 
           <Links />
+
+          <ThemeDropdown />
         </div>
       </main>
     </>
