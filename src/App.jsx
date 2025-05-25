@@ -7,9 +7,12 @@ function App() {
     <>
       <main className="bg-[#0a0a0a] text-white min-h-dvh flex justify-center items-center">
         <div className="w-4/5 max-w-96">
-          <Header />
 
-          <Links />
+          <div className="animate-translate">
+            <Header />
+            
+            <Links />
+          </div>
 
           <ThemeDropdown />
         </div>

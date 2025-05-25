@@ -4,7 +4,7 @@ import ThemeButton from "./ThemeButton";
 
 function ThemeDropdown() {
     return (
-        <div className="fixed top-6 right-6">
+        <div className="fixed top-6 right-6 opacity-0 animate-opacity">
             <div className="dropdown dropdown-end">
                 <div tabIndex={0} role="button" className="flex gap-1 items-center bg-[#333] hover:bg-[#0a0a0a] active:bg-black focus:bg-black transition-colors rounded-md border p-2 mb-2 cursor-pointer">
                     <MoonIcon className="size-5 text-white"/>
