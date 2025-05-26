@@ -1,12 +1,25 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import ThemeButton from "./ThemeButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ThemeDropdown() {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
 
-    const handleTheme = () => setTheme()
+    useEffect(() => {
+        const root = document.documentElement;
+        if (theme == 'dark') {
+            root.classList.add('dark')
+        } else {
+            root.classList.remove('dark')
+        }
+    }, [theme])
+
+    const handleTheme = (theme) => {
+        setTheme(theme);
+        localStorage.theme = theme;
+        document.activeElement.blur();
+    }
 
     return (
         <div className="fixed top-6 right-6 opacity-0 animate-opacity">
@@ -20,12 +33,12 @@ function ThemeDropdown() {
                 </div>
 
                 <ul tabIndex={0} className="dropdown-content bg-[#333] rounded-box w-32 p-2 flex flex-col gap-2">
-                    <ThemeButton>
+                    <ThemeButton onClick={() => handleTheme('dark')}>
                         <MoonIcon className="size-5 text-white"/>
                         Escuro
                     </ThemeButton>
 
-                    <ThemeButton>
+                    <ThemeButton onClick={() => handleTheme('light')}>
                         <SunIcon className="size-5 text-white"/>
                         Claro
                     </ThemeButton>
