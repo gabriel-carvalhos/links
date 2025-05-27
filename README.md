@@ -5,6 +5,8 @@
 ![DaisyUI](https://img.shields.io/badge/daisyui-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
+https://github.com/user-attachments/assets/3a4ce78a-6c9c-4fe6-9e2a-8273b36f5add
+
 Este é um projeto simples para divulgar meus links pessoais em uma única página.
 
 ## 💻 Setup
