@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1');
+@import "tailwindcss";
+@plugin "daisyui";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-title: "DM Serif Display", serif;
+
+    --animate-translate: translate 1s forwards;
+
+    @keyframes translate {
+        0% {
+            transform: translateY(25vh);
+            opacity: 0;
+        }
+        50% {
+            transform: translateY(-5vh);
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    --animate-opacity: opacity 0.3s forwards 1s;
+
+    @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+}
