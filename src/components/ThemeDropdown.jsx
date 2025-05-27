@@ -24,22 +24,22 @@ function ThemeDropdown() {
     return (
         <div className="fixed top-6 right-6 opacity-0 animate-opacity">
             <div className="dropdown dropdown-end">
-                <div tabIndex={0} role="button" className="flex gap-1 items-center bg-[#333] hover:bg-[#0a0a0a] active:bg-black focus:bg-black transition-colors rounded-md border p-2 mb-2 cursor-pointer">
+                <div tabIndex={0} role="button" className="flex gap-1 items-center dark:bg-[#333] bg-[#F0F0F0] hover:bg-[#0a0a0a] active:bg-black focus:bg-black transition-colors rounded-md border dark:border-white border-[#333] active:border-white p-2 mb-2 cursor-pointer **:dark:text-white **:text-[#333] hover:**:text-white active:**:text-white focus:**:text-white **:size-5">
                     {theme == 'dark' ? 
-                        <MoonIcon className="size-5 text-white"/> :
-                        <SunIcon className="size-5 text-white"/>
+                        <MoonIcon/> :
+                        <SunIcon/>
                     }
-                    <ChevronDownIcon className="size-5 text-white"/>
+                    <ChevronDownIcon/>
                 </div>
 
-                <ul tabIndex={0} className="dropdown-content bg-[#333] rounded-box w-32 p-2 flex flex-col gap-2">
+                <ul tabIndex={0} className="dropdown-content dark:text-white text-[#333] dark:bg-[#333] bg-[#F0F0F0] border dark:border-white border-[#333] rounded-box w-32 p-2 flex flex-col gap-2">
                     <ThemeButton onClick={() => handleTheme('dark')}>
-                        <MoonIcon className="size-5 text-white"/>
+                        <MoonIcon className="size-5"/>
                         Escuro
                     </ThemeButton>
 
                     <ThemeButton onClick={() => handleTheme('light')}>
-                        <SunIcon className="size-5 text-white"/>
+                        <SunIcon className="size-5"/>
                         Claro
                     </ThemeButton>
                 </ul>
